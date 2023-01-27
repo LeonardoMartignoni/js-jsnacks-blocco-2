@@ -18,4 +18,4 @@ for (i = 0; i < arrayNumbers.length; i += 2) {
 }
 
 // Stampo il totale dei numeri dispari
-resultNumbers.innerHTML = `La somma dei numeri dispari dell'array è: ${numbersTotal}`;
+resultNumbers.innerHTML = `La somma dei numeri in posizione dispari dell'array è: ${numbersTotal}`;
