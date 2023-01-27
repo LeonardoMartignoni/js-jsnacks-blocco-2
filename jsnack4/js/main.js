@@ -2,9 +2,16 @@
 const firstArray = [1, 2, 3, 4, 5, 6, 7];
 const secondArray = [1, 2, 3];
 
+// Output Var
+const firstOldArrayEl = document.getElementById('old_first_array');
+const secondOldArrayEl = document.getElementById('old_second_array');
+
+const firstNewArrayEl = document.getElementById('new_first_array');
+const secondNewArrayEl = document.getElementById('new_second_array');
+
 // Stampo gli array
-console.log('Primo array vecchio: ' + firstArray);
-console.log('Secondo array vecchio: ' + secondArray);
+firstOldArrayEl.innerHTML = `Il primo array vecchio è: ${firstArray}`
+secondOldArrayEl.innerHTML = `Il secondo array vecchio è: ${secondArray}`
 
 // SE il primo array è più grande del secondo array
 if (firstArray > secondArray) {
@@ -25,6 +32,6 @@ else if (firstArray < secondArray) {
     }
 }
 
-// Stampo gli array della stessa lunghezza
-console.log('Primo array nuovo: ' + firstArray);
-console.log('Secondo array nuovo: ' + secondArray);
+// Stampo gli array modificati della stessa lunghezza
+firstNewArrayEl.innerHTML = `Il primo array vecchio è: ${firstArray}`
+secondNewArrayEl.innerHTML = `Il secondo array vecchio è: ${secondArray}`
