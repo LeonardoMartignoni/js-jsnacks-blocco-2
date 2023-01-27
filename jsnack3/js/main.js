@@ -8,14 +8,13 @@ const resultNumbers = document.getElementById('result_number');
 let numbersTotal = 0;
 
 // Scorro la lista dell'array
-for (i = 0; i < arrayNumbers.length; i++) {
+for (i = 0; i < arrayNumbers.length; i += 2) {
 
     let currentArrayNumber = arrayNumbers[i];
 
-    // SE il numero è dispari (quindi NON divisibile per due)
-    if (currentArrayNumber % 2 != 0) {
-        numbersTotal += currentArrayNumber;
-    }
+    // Addiziono i numeri in posizioni dispari nell'array
+    numbersTotal += currentArrayNumber;
+
 }
 
 // Stampo il totale dei numeri dispari
